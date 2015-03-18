@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Arguments: $APP $INTERNAL_PORT $INTERNAL_IP_ADDRESS
+# Notify an external service that a successful deploy has occurred.
+
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+dokku_log_info1" post-deploy"
+#curl "http://httpstat.us/200"

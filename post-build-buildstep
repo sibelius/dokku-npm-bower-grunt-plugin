@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Arguments: $APP
+
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+
+dokku_log_info1" post-build-buildstep"
+
+# TODO

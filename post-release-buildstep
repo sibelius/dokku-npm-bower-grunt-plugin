@@ -6,7 +6,7 @@ set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
 source "$(dirname $0)/../common/functions"
 
-dokku_log_info1" pre-release-buildstep"
+echo "=====> post-release-buildstep"
 
 #CMD="cat > gm && \
 #      dpkg -s CONTAINER_PACKAGE > /dev/null 2>&1 || \
